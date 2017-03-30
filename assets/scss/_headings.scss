@@ -1,0 +1,14 @@
+// -----this is the content of 'headings.scss'-----
+$startSize: 2em;
+
+// that is an array
+$headings: h1 h2 h3;
+
+// that is a foreach loop
+@each $heading in $headings {
+    #{$heading} {
+        font-size: $startSize;
+    }
+
+    $startSize: $startSize - 0.5em;
+}

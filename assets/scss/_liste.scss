@@ -1,0 +1,47 @@
+
+ul.listDeux{
+    padding: 0;
+    li {
+        list-style: none;
+        a {
+            color: blue;
+            &:hover {
+                color: lime;
+            }
+        }
+    }
+}
+
+ul.listTrois{
+    padding: 0;
+    li {
+        list-style: none;
+        a {
+            color: lime;
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}
+
+%box{
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.box1{
+  @extend %box;
+  border-color: green;
+}
+
+.box2{
+  @extend %box;
+  border-color: red;
+}
+
+.box3{
+  @extend %box;
+  border-color: purple;
+}
